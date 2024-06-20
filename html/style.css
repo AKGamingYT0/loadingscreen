@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@font-face {
+    font-family: "Monument Extended";
+    src: url("./fonts/MonumentExtended-Ultrabold.otf");
+    font-weight: 800;
+}
+
+:root {
+    --strokecolor: rgba(60, 150, 255, 0.76);
+    --gradient: rgba(54, 219, 255, 0.5);
+    --lights: rgba(0, 137, 237, 0.18);
+}
+
+body {
+    background-image: url("./images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.light-top {
+    position: absolute;
+    width: 107.7083vw;
+    height: 82.6042vw;
+    left: -1.9792vw;
+    top: -72.0313vw;
+    background: var(--lights);
+    filter: blur(7.3958vw);
+}
+
+.light-bottom {
+    position: absolute;
+    width: 107.7083vw;
+    height: 82.6042vw;
+    left: -3.8542vw;
+    top: 40.8854vw;
+    background: var(--lights);
+    /* test */
+    filter: blur(7.3958vw);
+}
+
+.pattern {
+    position: absolute;
+    width: 103.2292vw;
+    height: 62.1875vw;
+    left: -2.3958vw;
+    top: -2.9688vw;
+    background: url("./images/pattern.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mid-skew-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    height: 40vw;
+}
+
+.skew {
+    position: absolute;
+    transform: matrix(0.99, -0.1, 0, 1, 0, 0);
+    left: 50%;
+    top: 50%;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    top: 32%;
+    transform: translate(-50%, -50%);
+    width: 35.4792vw;
+    height: 35.4792vw;
+}
+
+.loading-container {
+    position: absolute;
+    width: 30.1vw;
+    height: 2.9813vw;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    background-image: url("./images/loading-container-bar.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.loading-wrap {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 29.5313vw;
+    height: 1.25vw;
+}
+
+.loading {
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.loading-bar-background {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 29.5313vw;
+    height: 1.25vw;
+}
+
+.loading-svg {
+    position: absolute;
+    width: 29.5313vw;
+    height: 1.25vw;
+}
+
+.social-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 78%;
+    transform: translate(-50%, -50%);
+    width: 33vw;
+    height: 10vw;
+}
+
+.social-box {
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 1vw;
+    width: 9.4911vw;
+    height: 8.4839vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("./images/box.svg");
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.social-box:hover {
+    filter: drop-shadow(0 0 1.5vw rgba(255, 255, 255, 0.8));
+}
+
+.social-icon {
+    position: absolute;
+    width: 4vw;
+    left: 50%;
+    top: 43%;
+    transform: translate(-50%, -50%);
+}
+
+.social-name {
+    position: absolute;
+    font-family: 'Monument Extended';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1vw;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+}
+
+.copy-clip {
+    position: absolute;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: .4167vw;
+    color: #FFFFFF;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.loading-percent {
+    position: absolute;
+    font-family: 'Monument Extended';
+    -webkit-text-stroke: 1px var(--strokecolor);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.1vw;
+    left: 50%;
+    top: 56%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(108.7% 110% at 50% 57.39%, var(--gradient) 0%, rgba(7, 7, 7, 0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.admin-wrapper {
+    position: absolute;
+    width: 20vw;
+    height: 23vw;
+    left: 105%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgb(59, 59, 59);
+}
+
+.admin-box {
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 0.4vw;
+    width: 16vw;
+    height: 5.2474vw;
+    background-image: url("./images/admin-box.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.admin-box:hover {
+    filter: drop-shadow(0 0 1vw #ffffff45);
+}
+
+.pp {
+    position: absolute;
+    width: 3vw;
+    top: 1vw;
+    left: 0.5vw;
+}
+
+.admin-rank {
+    position: absolute;
+    font-family: 'Monument Extended';
+    -webkit-text-stroke: 1px var(--strokecolor);
+    font-style: normal;
+    font-weight: 800;
+    font-size: .8813vw;
+    left: 4vw;
+    top: 0.2vw;
+    letter-spacing: 0.53em;
+    background: radial-gradient(108.7% 110% at 50% 57.39%, var(--gradient) 0%, rgba(7, 7, 7, 0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.admin-description {
+    position: absolute;
+    left: 4vw;
+    top: 1.7vw;
+    font-family: 'Montserrat';
+    width: 10vw;
+    font-style: normal;
+    font-weight: 500;
+    font-size: .6292vw;
+    line-height: 122%;
+    color: rgba(255, 255, 255, 0.42);
+}
+
+.tips-box {
+    position: absolute;
+    width: 40vw;
+    height: 3vw;
+    top: 97%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* .icon {
+    position: absolute;
+    width: 1vw;
+    top: 1vw;
+    left: 46.8%;
+    transform: translate(-50%, -50%);
+} */
+
+.tips-title {
+    position: absolute;
+    width: 1vw;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Monument Extended';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    color: #fff;
+}
+
+.tips-description {
+    position: absolute;
+    font-family: 'Montserrat';
+    top: 1.2vw;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    font-size: 14px;
+    line-height: 122%;
+    color: rgba(255, 255, 255, 0.42);
+    width: 39.9vw;
+}
