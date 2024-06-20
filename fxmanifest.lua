@@ -1,18 +1,10 @@
 fx_version 'cerulean'
 game 'gta5'
-author 'Slaviks Store Premium UIs'
+author 'Soul Services'
 
 loadscreen_manual_shutdown "yes"
 
 loadscreen 'html/index.html'
-
-client_scripts {
-  'client.lua',
-  "config.lua"
-}
-shared_scripts {
-"config.lua"
-}
 
 files {
     'html/index.html',
@@ -21,5 +13,4 @@ files {
     'html/src/scripts/*.js',
     'html/src/fonts/*.*'
  }
-
  loadscreen_cursor 'yes'
